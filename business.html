@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tee-Stories</title>
+</head>
+
+<style>
+    body {
+        background-image: url("img/bg.png");
+        margin: 0px;
+        padding: 0px;
+        height: 700px;
+        color: aliceblue;
+
+    }
+
+    .left {
+        border: 2px solid rgb(255, 255, 255);
+        display: inline-block;
+        position: absolute;
+        left: 9px;
+        top: 10px;
+        filter: invert(100%);
+
+    }
+
+    .mid {
+        display: block;
+        width: 564px;
+        margin: 31px auto;
+        /* padding: 8px; */
+
+
+        /* border: 2px solid greenyellow; */
+
+
+    }
+
+    .right {
+        /* border: 2px solid blue; */
+        display: inline-block;
+        position: absolute;
+        right: 12px;
+        top: 15px;
+        font-size: 15px;
+        padding: 12px 10px;
+        ;
+
+
+    }
+
+    .navbar {
+        display: inline-block;
+
+        position: fixed;
+
+
+    }
+
+    .navbar li {
+        display: inline-block;
+        /* position: fixed; */
+
+    }
+
+    .navbar li a {
+        font-family: 'Baloo Bhai', cursive;
+        text-decoration: none;
+        padding: 15px 33px;
+        color: rgb(223 223 223);
+        font-size: 20px;
+
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        color: rgb(78, 78, 78);
+
+    }
+
+    .left img {
+        width: 90px;
+        /* position: fixed; */
+        ;
+    }
+
+    .left div {
+        color: black;
+
+        text-align: center;
+    }
+
+    .btn {
+        font-family: 'Baloo Bhai', cursive;
+        border-radius: 10px;
+        border: 2px solid black;
+        background-color: black;
+
+        cursor: pointer;
+    }
+
+    .btn a:hover {
+        color: rgb(78, 78, 78);
+
+    }
+
+    .btn a {
+        color: aliceblue;
+        text-decoration: none;
+    }
+
+    div #book {
+        /* position: fixed; */
+    }
+
+    .container {
+        /* border: 2px solid white; */
+        margin: 65px 12px;
+        padding: 85px 108px;
+        width: 25%;
+        border-radius: 2px;
+        display: inline-block;
+        float: right;
+    }
+    .container h1{
+        text-align: center;
+        font-size: 50px;
+    }
+
+    .btn1 {
+        border: 2px solid black;
+        border-radius: 10px;
+        color: aliceblue;
+        background-color: rgb(255, 0, 0);
+        cursor: pointer;
+        display: block;
+        width: 295px;
+        margin: auto;
+        padding: 4px 4px;
+
+    }
+    /* .container button{
+        margin: auto;
+
+    } */
+
+    div.group input {
+        text-align: center;
+        display: block;
+        border: 3px solid black;
+        margin: 7px auto;
+        padding: 5px 70px;
+        font-size: 13px;
+        border-radius: 13px;
+        
+
+    }
+</style>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="left" id="book">
+                <img src="img/logo.png" alt="">
+                <div>FEEL IT</div>
+
+            </div>
+            <div class="mid" id="box">
+                <ul class="navbar">
+                    <li><a href="#" class="active">Name</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">Address</a></li>
+                </ul>
+            </div>
+            <div class="right">
+                <button class="btn"><a href="#">Call us</a></button>
+                <button class="btn"><a href="#">Info.</a></button>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <h1>ORDER TO FEEL IT</h1>
+        <form action="noaction.php">
+            <div class="group">
+                <input type="text" name="" placeholder="Enter Your Name Here">
+            </div>
+            <div class="group">
+                <input type="email" name="" placeholder="Enter Email Here">
+            </div>
+            <div class="group">
+                <input type="text" name="" placeholder="Enter Address Here">
+            </div>
+            <div class="group">
+                <input type="number" name="" placeholder="Enter Contact Number Here">
+            </div>
+            <button class="btn1">submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
